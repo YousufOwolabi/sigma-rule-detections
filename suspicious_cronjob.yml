@@ -1,0 +1,21 @@
+title: Suspicious Cron Job Creation
+id: e2c9f2de-4457-4af5-9999-111111111111
+description: Detects suspicious cron jobs with suspicious commands like wget or curl
+status: experimental
+author: ghost
+date: 2025/07/05
+logsource:
+  product: linux
+  service: cron
+detection:
+  selection:
+    Command|contains:
+      - 'wget'
+      - 'curl'
+      - 'nc'
+      - 'bash -i'
+  condition: selection
+level: high
+tags:
+  - attack.persistence
+  - attack.t1053

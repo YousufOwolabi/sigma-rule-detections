@@ -1,6 +1,6 @@
 # Sigma Rule Detections
 
-🚀 **Author:** Yousuf Owolabi  
+🚀 **Author:** Yusuf Owolabi  
 🔍 **Role:** Security Analyst | SOC Analyst | Detection Engineer  
 
 ---
